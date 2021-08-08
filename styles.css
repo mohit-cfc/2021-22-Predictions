@@ -1,0 +1,214 @@
+/* 
+     Color Pallete
+
+     Eerie Black : #191716
+     Alabaster(white): #e0e2db
+     Dark Slate Blue: #3d348b
+     Goldenrod: #e6af2e
+     Khaki Web: #beb7a4 
+
+*/
+
+
+/* Global Styles */
+html{
+    font-family: 'Lato', sans-serif;
+    background-color: #191716;
+    color: #e0e2db;
+    font-size: 1.5em;
+}
+/*------------------*/
+/* Landing Page Styles */
+.heading{
+    font-weight: 900;
+    font-size: 2.4em;
+    text-align: center;
+}
+.heading span{
+    color: #3d348b;
+}
+.main-content{
+    /* border: 1px solid #e0e2db; */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em 0px;
+}
+button{
+    background-color: #191716;
+    cursor: pointer;
+    max-width: 270px;
+    max-height: 270px;
+    border: 2px solid #e0e2db;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+button:hover{
+    box-shadow: 0px 5px 5px #e0e2db;
+    transform: scale(1.05);
+}
+button:active{
+    transform: scale(0.9);
+}
+.laliga-logo img{
+    width: 100%;
+    max-width: 256px;
+    transform: scale(0.6);
+    position: relative;
+    bottom: 40px;
+}
+.league-logo img{
+    width: 100%;
+    max-width: 256px;
+}
+.europa-logo img{
+    width: 100%;
+    max-width: 256px;
+    transform: scale(0.6);
+    position: relative;
+    bottom: 45px;
+}
+/*------------------*/
+
+/* PL Predictions Page */
+.heading-pl{
+    font-weight: 900;
+    font-size: 2.4em;
+    text-align: center;
+    margin: 50px 0px;
+}
+.back-button{
+    max-width: 100px;
+    max-height: 100px;
+    margin-top: 50px;
+    border: 1px solid #e0e2db;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 50px 0px;
+    transition: all 0.3s;
+    
+}
+.back-button:hover{
+    box-shadow: 0px 5px 5px #e0e2db;
+    transform: scale(1.05);
+}
+.back-button:active{
+    transform: scale(0.8);
+}
+.back-button img{
+    width: 100%;
+    max-width: 50px;
+    
+}
+.pl-table-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pl-table{
+    border-collapse: collapse;
+    width: 40%;
+    text-align: left;
+}
+.pl-table thead tr{
+    font-size: 1.4em;
+}
+.pl-table th, .pl-table td{
+    padding: 12px 15px;
+    border-bottom: 0.1px solid #282828;
+}
+.pl-table .citeh td{
+    color: #e6af2e;
+}
+.pl-table .cfc td{
+    border-bottom: 2.2px solid #3d348b;   
+}
+.pl-table .uel td{
+    border-bottom: 2px solid orange;   
+}
+.pl-table .conference td{
+    border-bottom: 1.5px solid lightgreen;   
+}
+.pl-table .relegation td{
+    border-bottom: 3px solid lightcoral;   
+}
+.pl-footer{
+    display: flex;
+    justify-content: center;
+}
+/*-----------------------------------*/
+/* Other Competiteions Predictions*/
+.other-bodies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.other-headings{
+    font-weight: 900;
+    font-size: 2.4em;
+    text-align: center;
+}
+.club-icons{
+    width: 100%;
+    max-width: 350px;
+}
+.juventus-icon{
+    width: 100%;
+    max-width: 250px;
+}
+.club-name{
+    font-size: 2.2em;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+@media(max-width: 700px){
+    .other-bodies{
+        margin-top: 40px;
+    }
+    .main-content{
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 0px;
+    }
+    .heading{
+        font-size: 2em;
+    }
+    .heading-pl{
+        font-size: 1.7em;
+    }
+    .pl-table thead tr{
+        font-size: 1.1em;
+    }
+    .pl-body{
+        margin: 0px;
+    }
+    .league-logo, .laliga-logo, .europa-logo{
+        margin-bottom: 50px;
+    }
+    .other-headings{
+        font-weight: 900;
+        font-size: 1.9em;
+        text-align: center;
+    }
+    .club-icons{
+        width: 100%;
+        max-width: 300px;
+    }
+    .juventus-icon{
+        width: 100%;
+        max-width: 150px;
+    }
+    .club-name{
+        font-size: 1.7em;
+        text-align: center;
+        font-weight: 400;
+    }
+    
+}
+
